@@ -26,7 +26,7 @@ public class AddBookAction extends HttpServlet {
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public AddBookAction() {
+	public AddBookAction()  {
 		super();
 		// TODO Auto-generated constructor stub
 	}
