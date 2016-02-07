@@ -1,0 +1,43 @@
+INSERT INTO `Author`(`AuthorName`) VALUES ('Abraham');
+INSERT INTO `Author`( `AuthorName`) VALUES ('Rivero');
+INSERT INTO `Author`( `AuthorName`) VALUES ('Michael');
+INSERT INTO `Author`(`AuthorName`) VALUES ('Allen');
+INSERT INTO `Author`( `AuthorName`) VALUES ('Kim');
+
+INSERT INTO `Genre`(`GenreDesc`) VALUES ('THEORY');
+INSERT INTO `Genre`(`GenreDesc`) VALUES ('PRACTICAL');
+
+INSERT INTO `BOOK`( `Title`, `Price`, `Genrecode`, `publisher`, `pub_year`, `copies`) VALUES ('DB Sys Concepts',10,1,'Anitha',1980,12);
+INSERT INTO `BOOK`( `Title`, `Price`, `Genrecode`, `publisher`, `pub_year`, `copies`) VALUES ('SQL',100,2,'Samy',1990,20);
+INSERT INTO `BOOK`( `Title`, `Price`, `Genrecode`, `publisher`, `pub_year`, `copies`) VALUES ('SQLite',30,2,'Priya',1900,5);
+INSERT INTO `BOOK`( `Title`, `Price`, `Genrecode`, `publisher`, `pub_year`, `copies`) VALUES ('Adv SQL',20,2,'Ram',1995,9);
+INSERT INTO `BOOK`( `Title`, `Price`, `Genrecode`, `publisher`, `pub_year`, `copies`) VALUES ('Db Design',90,1,'Anitha',1900,5);
+
+INSERT INTO `WrittenBy`(`AuthorID`, `BookID`) VALUES (1,1);
+INSERT INTO `WrittenBy`(`AuthorID`, `BookID`) VALUES (1,6);
+INSERT INTO `WrittenBy`(`AuthorID`, `BookID`) VALUES (2,3);
+INSERT INTO `WrittenBy`(`AuthorID`, `BookID`) VALUES (3,2);
+INSERT INTO `WrittenBy`(`AuthorID`, `BookID`) VALUES (4,4);
+INSERT INTO `WrittenBy`(`AuthorID`, `BookID`) VALUES (5,4);
+
+select * from BOOK
+
+INSERT INTO `Login`(`LoginName`, `Password`, `Role`) VALUES ('Madhu','12345','0');
+INSERT INTO `Login`(`LoginName`, `Password`, `Role`) VALUES ('Chitra','54321','0');
+INSERT INTO `Login`(`LoginName`, `Password`, `Role`) VALUES ('Sindhu','12345','0');
+INSERT INTO `Login`(`LoginName`, `Password`, `Role`) VALUES ('Admin1','12345','1');
+INSERT INTO `Login`(`LoginName`, `Password`, `Role`) VALUES ('Admin2','54321','1');
+
+INSERT INTO `USER_DETAILS`(`UserID`,`LoginName`, `FName`, `LName`, `StNo`, `City`, `State`) 
+VALUES (111,'Madhu','Madhavi','Unnam','3315','GSO','NC');
+INSERT INTO `USER_DETAILS`(`UserID`,`LoginName`, `FName`, `LName`, `StNo`, `City`, `State`) 
+VALUES (222,'Chitra','ChitraLekha','Nikam','45','GSO','NC');
+INSERT INTO `USER_DETAILS`(`UserID`,`LoginName`, `FName`, `LName`, `StNo`, `City`, `State`) 
+VALUES (333,'Sindhu','Sindhu','Tejo','34','GSO','NC');
+INSERT INTO `USER_DETAILS`(`UserID`,`LoginName`, `FName`, `LName`, `StNo`, `City`, `State`) 
+VALUES (444,'Admin1','Scott','Mike','56','CO','SC');
+INSERT INTO `USER_DETAILS`(`UserID`,`LoginName`, `FName`, `LName`, `StNo`, `City`, `State`) 
+VALUES (555,'Admin2','Michael','Williams','22','CLT','NC');
+
+
+
